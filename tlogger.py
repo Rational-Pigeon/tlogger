@@ -3,10 +3,15 @@
 import sqlite3
 import datetime
 import argparse
+import os
+
+# Get the directory where the original script is located
+script_dir = os.path.dirname(os.path.realpath(__file__))# Get the directory where the script is located
+db_path = os.path.join(script_dir, 'logger.db')
 
 # Setup the database
 def setup_database():
-    conn = sqlite3.connect('logger.db')
+    conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS categories (
@@ -133,7 +138,7 @@ def get_date_range(interval):
 
 # Execute the command
 def execute_command(args):
-    conn = sqlite3.connect('logger.db')
+    conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
     if args.command == 'new_category':
