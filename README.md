@@ -85,10 +85,10 @@ The following date formats and intervals are supported:
 ./tlogger.py new_category Development
 
 # Add a new entry
-./tlogger.py add Development "working on time-logger" 2.5
+./tlogger.py add Development "working on tlogger" 2.5
 
 # Add a new entry with a date 2-days-ago
-./tlogger.py add Development "went for a long walk, read LAEL and came up with improvement plan" 1 2-days-ago
+./tlogger.py add Reflection "went for a long walk, read LAEL and came up with improvement plan" 1 2-days-ago
 
 # List today's entries
 ./tlogger.py list
