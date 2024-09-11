@@ -102,14 +102,3 @@ The following date formats and intervals are supported:
 # Generate a report
 ./tlogger.py report this-week Development
 ```
-### Contributing
-Contributions are welcome! If you would like to contribute to tlogger, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch with a descriptive name (git checkout -b my-feature-branch).
-3. Make your changes and commit them (git commit -m 'Add new feature').
-4. Push your changes to your forked repository (git push origin my-feature-branch).
-5. Open a pull request describing your changes.
-
-### License
-This project is licensed under the MIT License.
